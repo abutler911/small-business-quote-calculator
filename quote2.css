@@ -1,13 +1,20 @@
+body {
+    background-image: url("sod_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    
+}
 h1, h2 {
     text-align: center;
-    color: black;
+    color: white;
     font-family: 'Fauna One', serif;
     font-size: 120px;
 
 }
 
 #header h1, h2 {
-    color: green;
+    color: white;
     font-family: 'Fauna One', serif;
     font-size: 60px;
 }
@@ -32,7 +39,7 @@ form {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
     border: 1px solid lightgray;
-    opacity: 0.6;
+    /* opacity: 0.6; */
 }
 
 /* .card-header {

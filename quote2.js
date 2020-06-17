@@ -24,8 +24,9 @@ function update() {
 function showMulch() {
     var chkMulch = document.getElementById("chkMulch");
     if(chkMulch.checked) {
-        document.getElementById('productLabel').innerHTML = "Mulch Price";
+        document.getElementById('productLabel').innerHTML = "Mulch";
         document.getElementById('productTax').innerHTML = "Mulch Tax"
+        document.getElementById('totalProduct').innerHTML = 'Mulch&Tax'
     }
 
 }
