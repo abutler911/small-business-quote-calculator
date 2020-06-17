@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
             integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
             <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Fauna+One&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
         <script src="quote2.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -33,18 +34,30 @@
        
         <div class = "container pt-3">
             <div class = "row">
+                <div class = "col-sm-6">
+                    <label class="radio-inline"><input type="radio" id = "chkMulch" name="options" onclick="showMulch();" /> Mulch</label>
+                </div>
+                <div class = "col-sm-6">
+                    <label class="radio-inline"><input type="radio" id = "chkInstall" name="options" onclick="showInstall();" /> Install</label>
+                </div>
+                
+        </div>
+
+
+        <div class = "container pt-3">
+            <div class = "row">
                 <div class = "col-sm-4 shadow-sm p-3 mb-4 bg-white">
                     <div class = "card">
                         <div id = "sodprice" class = "card-header">
-                            <h5>Sod PSF <input id = "sodPsfPrice" value="0.38" placeholder="$0.38"></input></h5>
+                            <h5>Sod PSF</h5>
                         </div>
-                        
+                        <input id = "sodPsfPrice" type = "number" value = "0.38" placeholder="$0.38"></input>
                     </div>
                 </div>
                 <div class = "col-sm-4 shadow-sm p-3 mb-4 bg-white">
                     <div class = "card">
                         <div id = "installprice" class = "card-header">
-                            <h5>Install PSF <input id = "installPsfPrice" value="0.17" placeholder="$0.17"></input></h5>
+                            <h5>Install PSF <input id = "installPsfPrice" type = "number" value = "0.17" placeholder="$0.17"></input></h5>
                         </div>
                         
                     </div>
@@ -52,7 +65,7 @@
                 <div class = "col-sm-4 shadow-sm p-3 mb-4 bg-white">
                     <div class = "card">
                         <div id = "taxrate" class = "card-header">
-                            <h5>Tax Rate <input id = "taxRate" value="7.25%" placeholder="7.25%"></input></h5>
+                            <h5>Tax Rate <input class = "input-sm" id = "taxRate" type = "number" value="0.0725" placeholder="7.25%"></input></h5>
                         </div>
                         
                     </div>
@@ -63,7 +76,7 @@
                 <div class = "col-sm-4 shadow-sm p-3 mb-4 bg-white">
                     <div class = "card">
                         <div class = "card-header">
-                            <h5>Sod Price</h5>
+                            <h5 id = "productLabel">Sod Price</h5>
                         </div>
                         <div id = "totalSod" class = "card-body">$0.00</div>
                     </div>

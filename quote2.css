@@ -17,33 +17,29 @@ form {
     border-radius: 10px;
 }
 
-input {
-    font-family: inherit;
-    font-size: 100px;
+#footage {
+    font-size: 25px;
+    font-family: 'VT323', monospace;
 }
 
 .my-3 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 10px;
-
-}
-.my-3 {
     border: 1px solid lightgray;
     opacity: 0.6;
 }
 
 .card-header {
-    height: 50px;
+    height: 40px;
     color: black;
     font-size: 60px;
     text-align: center;
 }
+
 #sodprice, #installprice, #taxrate {
     height: 100px;
 }
-.card-header h5 {
-    font-size: 30px;
-}
+
 .card-body {
     font-family: 'Fredericka the Great', cursive;
     text-align: center;
@@ -53,7 +49,7 @@ input {
 
 h5 {
     text-align: center;
-    font-size: 150px;
+    font-size: 130px;
     font-family: 'Fauna One', serif;
     font-weight: bold;
 }
@@ -61,6 +57,11 @@ h5 {
 .col-sm-4 {
     text-align: center;
     font-size: 40px;
+}
+
+.col-sm-6 {
+    text-align: center;
+    font-size: 20px;
 }
 
 .row {
@@ -77,7 +78,7 @@ h5 {
 }
 
 #taxRate, #sodPsfPrice, #installPsfPrice {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: green;
     border: 1px solid green;
@@ -89,4 +90,8 @@ h5 {
 label {
     font-size: 30px;
     font-family: 'Fauna One', serif;
+}
+
+.radio-inline {
+    font-size: 15px;
 }
