@@ -6,6 +6,12 @@ h1, h2 {
 
 }
 
+#header h1, h2 {
+    color: green;
+    font-family: 'Fauna One', serif;
+    font-size: 60px;
+}
+
 .btn {
     border: 1px solid black;
 }
