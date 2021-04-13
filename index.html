@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EAB Solutions | Small Business Quotes
+
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" type="text/css" href="quote.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Fauna+One&family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+    <script src="quote.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="header" class="container p-3 my-3">
+        <h1>Small Business Quote Calculator</h1>
+        <h2>'Small Business Tag Line'</h2>
+    </div>
+
+    <div class="container pt-3">
+        <form>
+            <div class="input-group mb-3 input-group-lg">
+                <input id="footage" type="number" class="form-control" placeholder="Square Footage Needed">
+                <div class="input-group-append">
+                    <button class="btn btn-success" type="button" onclick="update(); return false;" value="Submit">Go</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-sm-6">
+                    <label class="radio-inline"><input type="radio" id = "chkMulch" name="options" onclick="showMulch();" /> Mulch</label>
+                </div>
+                <div class="col-sm-6">
+                    <label class="radio-inline"><input type="radio" id = "chkInstall" name="options" onclick="showInstall();" /> Install</label>
+                </div>
+
+            </div>
+
+
+            <div class="container pt-3">
+                <div class="row">
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div id="sodprice" class="card-header">
+                                <h5>{product} PSF</h5>
+                            </div>
+                            <input id="sodPsfPrice" type="number" value="0.38" placeholder="$0.38"></input>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div id="installprice" class="card-header">
+                                <h5>Install PSF <input id="installPsfPrice" type="number" value="0.17" placeholder="$0.17"></input>
+                                </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div id="taxrate" class="card-header">
+                                <h5>Tax Rate <input class="input-sm" id="taxRate" type="number" value="0.0725" placeholder="7.25%"></input>
+                                </h5>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 id="productLabel">{product} Price</h5>
+                            </div>
+                            <div id="totalSod" class="card-body">$0.00</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Tax Amount</h5>
+                            </div>
+                            <div id="totalTax" class="card-body">$0.00</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>{product} & Tax</h5>
+                            </div>
+                            <div id="totalSodTax" class="card-body">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-3">
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Install Price</h5>
+                            </div>
+                            <div id="totalInstall" class="card-body">$0.00</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>{product} and Install</h5>
+                            </div>
+                            <div id="totalSodInstall" class="card-body">$0.00</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 shadow-sm p-3 mb-4 bg-white">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Total Order</h5>
+                            </div>
+                            <div id="totalOrder" class="card-body">$0.00</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+</body>
+
+</html>
