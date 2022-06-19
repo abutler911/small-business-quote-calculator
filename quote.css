@@ -1,103 +1,90 @@
-h1, h2 {
-    text-align: center;
-    color: black;
-    font-family: 'Fauna One', serif;
-    font-size: 120px;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
 }
 
-#header h1, h2 {
-    color: green;
-    font-family: 'Fauna One', serif;
-    font-size: 60px;
+#header {
+    margin-bottom: 40px;
 }
 
 .btn {
     border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
-form {
+
+.select-btn {
+    background-color: rgb(87, 175, 87);
+    color: white;
+    font-size: 1.2em;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.inputs {
     font-size: 40px;
-    width: 400px;
-    margin: 0 auto;    
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* width: 70%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
 
-#footage {
-    font-size: 25px;
-    font-family: 'VT323', monospace;
-}
-
-.my-3 {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 10px;
-    border: 1px solid lightgray;
-    opacity: 0.6;
-}
-
-.card-header {
-    height: 40px;
-    color: black;
-    font-size: 60px;
-    text-align: center;
-}
-
-#sodprice, #installprice, #taxrate {
-    height: 100px;
-}
-
-.card-body {
-    font-family: 'Fredericka the Great', cursive;
-    text-align: center;
-    font-size: 60px;
-    color: green;
-}
-
-h5 {
-    text-align: center;
-    font-size: 130px;
-    font-family: 'Fauna One', serif;
-    font-weight: bold;
-}
-
-.col-sm-4 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.col-sm-6 {
-    text-align: center;
-    font-size: 20px;
+.input-container {
+    align-items: center;
 }
 
 .row {
-    margin: 2px;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-#taxRate, #sodPsfPrice, #installPsfPrice {
-    font-size: 20px;
-    font-weight: bold;
-    color: green;
-    border: 1px solid green;
-    padding: 3px;
+    margin: 10px;
+    margin-bottom: 10px;
     text-align: center;
-    display: inline;
+    justify-content: space-between;
 }
 
-label {
-    font-size: 30px;
-    font-family: 'Fauna One', serif;
+.outputs {
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
 }
 
-.radio-inline {
-    font-size: 15px;
+.output {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.output h5 {
+    font-size: 1.5em;
+}
+
+.output p {
+    font-size: 3em;
+}
+
+#install-price {
+    display: none;
+}
+
+#install-price-cont {
+    display: none;
+}
+
+#product-install-cont {
+    display: none;
+}
+
+.display {
+    display: block;
 }
