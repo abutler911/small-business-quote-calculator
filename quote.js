@@ -11,7 +11,7 @@ let tax = total * taxRate;
 let totalProduct = total + tax;
 
 console.log(installPriceCont);
-console.log(installChecked);
+// console.log(installChecked);
 console.log(footage, productPsfPrice, installPsfPrice, taxRate);
 
 console.log(total, tax, totalProduct);
